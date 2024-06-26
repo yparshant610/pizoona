@@ -34,10 +34,10 @@ class MyUser {
 
   static MyUser fromEntity(MyUserEntity entity) {
     return MyUser(
-        userId: userId,
-        email: email,
-        name: name,
-        hasActiveCart: hasActiveCart
-    )
+        userId: entity.userId,
+        email: entity.email,
+        name: entity.name,
+        hasActiveCart: entity.hasActiveCart
+    );
   }
 }
